@@ -133,7 +133,8 @@ I optimazed this code and as I say higher, code and actions in it too small, so 
 - Optimize loop with using `register int i = 0` as it should suggest the compiler to store this value in the registers.
 - Delete unused variable `int res = 0;` what help minimize memory costs and some time.
 
-And I have nwxt result:
+And I have next result:
+
 ![example 2](/images/2.png)
 
 - last optimization I made it's swap `this_thread::sleep_for(chrono::seconds(1));` and `if (i > 8) res = resultOfSum(a, b); if (res > 0) return res;`.
